@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js" type="text/javascript" defer></script>
+    
+    <title>Pokédex Web</title>
+</head>
+<body>
+   <div id="tiempo">
+    <form action="" onsubmit="searchPokemon(event)" class="justify-content-center">
+        <div class="row justify-content-between">
+             <input name="pokemon" type="text" autocomplete="off" placeholder="Ingrese nombre" class="col-9 mb-1">
+             <button type="submit" class="btn btn-danger col-2">Mostrar Pokemón</button>
+        </div>
+     </form>
+ 
+     
+     <div data-poke-card class="poke-card mb-3">
+         <div data-poke-name class="poke-name">Pokédex</div>
+         <div data-poke-img-container class="img-container">
+             <img data-poke-img src="img/poke-shadown.png" alt="" class="poke-img">
+ 
+         </div>
+         <div data-poke-id></div>
+         <div data-poke-types class="poke-types"></div>
+         <div data-poke-stats class="poke-stats"></div>
+     </div>
+   </div>
+</body>
+</html>
